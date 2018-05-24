@@ -29,25 +29,25 @@
               
             
 
-              <a class="header-menu-link" id="header-menu-home" href="/">Home</a>     
+              <a class="header-menu-link" id="header-menu-home" href="/">首页</a>     
 
             
             
             
 
-              <a class="header-menu-link" id="header-menu-archives" href="/archives">Archives</a>     
+              <a class="header-menu-link" id="header-menu-archives" href="/archives">归档</a>     
 
             
             
             
 
-              <a class="header-menu-link" id="header-menu-tags" href="/tags">Tags</a>     
+              <a class="header-menu-link" id="header-menu-tags" href="/tags">标签</a>     
 
             
             
             
 
-              <a class="header-menu-link" id="header-menu-about" href="/about">About</a>     
+              <a class="header-menu-link" id="header-menu-about" href="/about">关于</a>     
 
             
             
@@ -116,6 +116,111 @@
 	   
 	<div class="article-header">
 	    
+	     <a class="article-title" href="/2018/05/24/换电脑的新经历呀/">换电脑的新经历呀</a>  
+	       
+		 
+
+		<div class="article-meta">
+		
+		May 24, 2018
+
+		
+			<span class="iconfont icon-star"></span>		 
+			            
+			<a class="article-tag" href="/tags/日常/">日常</a>           
+			
+		
+		</div>
+
+	</div>
+
+
+	
+
+    
+	<div class="article-excerpt">	
+		 
+			<p>唔五一当天的时候收到了新电脑。</p>
+<p>可谓是精挑细选了，当然我一直自信自己的眼光非常的好。</p>
+<p>所以精挑细选后的新电脑可以说是很喜欢了。</p>
+<p>最令我开心的是大屏又很轻，而且近期使用认为续航也到令人开心。</p>
+<p>然后涉及到了换电脑写博客的问题23333</p>
+<p>比起来寒假的时候摸索着弄了半天，新配置的时候非常迅速。</p>
+<p>仍然是基于GitHub pages + Hexo</p>
+<p>因为上一次没有做什么记录这次就写个简单记录吧。</p>
+<h1 id="从零开始"><a href="#从零开始" class="headerlink" title="从零开始"></a>从零开始</h1><ul>
+<li>Notepad++ [Note ++下载官网（略难开）]（<a href="https://notepad-plus.en.softonic.com/）" target="_blank" rel="noopener">https://notepad-plus.en.softonic.com/）</a></li>
+</ul>
+<p>[Notepad++下载]（<a href="http://dl.pconline.com.cn/html_2/1/117/id=10699&amp;pn=0.html）" target="_blank" rel="noopener">http://dl.pconline.com.cn/html_2/1/117/id=10699&amp;pn=0.html）</a></p>
+<ul>
+<li><p>git       [git下载]（<a href="https://gitforwindows.org/）" target="_blank" rel="noopener">https://gitforwindows.org/）</a></p>
+</li>
+<li><p>Node.js   [node.js下载]（<a href="https://nodejs.org/en/）" target="_blank" rel="noopener">https://nodejs.org/en/）</a></p>
+</li>
+<li><p>hexo   Git Bash + npm命令</p>
+</li>
+</ul>
+<p>任意位置，右键Git Bash 键入：npm install -g hexo</p>
+<p>(hexo -v 可以检测是否安装成功)</p>
+<ul>
+<li>初始化Hexo 新建文件夹 + Git Bash</li>
+</ul>
+<p>新创建的文件夹，右键Git Bash 键入：hexo init 安装</p>
+<p>进入_config.yml进行配置:主要是#Site部分吧</p>
+<ul>
+<li>部署到Github</li>
+</ul>
+<p>账号,new repository,uesrname/uesrname.github.io</p>
+<p>进入_config.yml进行配置:deploy 部分</p>
+<blockquote>
+<blockquote>
+<p>deploy:</p>
+</blockquote>
+</blockquote>
+<p>  type: git</p>
+<p>  repo: <a href="https://github.com/uesrname/uesrname.github.io" target="_blank" rel="noopener">https://github.com/uesrname/uesrname.github.io</a> </p>
+<p>  branch：master</p>
+<p>(冒号后面一定要加空格)</p>
+<ul>
+<li>Git配置 Git Bash</li>
+</ul>
+<p>git config –global user.name “你的用户名”<br>git config –global user.email “你github的邮箱”</p>
+<ul>
+<li>密钥  Git Bash</li>
+</ul>
+<p>ssh-keygen -t rsa -C “你github的邮箱”</p>
+<p>在C：/Users/用户名/.ssh/:  是默认密钥位置</p>
+<p>github设置界面，选择SSH and GPG key，创建一个New SSH key</p>
+<p>打开生成的密钥文件，复制id_rsa.pub里内容，复制到Key，Add SSh key(title随便写)</p>
+<ul>
+<li>安装自动部署发布工具 Git Bash + npm命令</li>
+</ul>
+<p>新创建的文件夹，右键Git Bash 键入：npm install hexo-deployer-git –save</p>
+<ul>
+<li>发布 Git Bash</li>
+</ul>
+<p>新创建的文件夹，右键Git Bash 依次键入：hexo c,hexo g,hexo d</p>
+<p>登陆github，显示INFO Deploy done： git 完成</p>
+<p><a href="https://username.github.io/" target="_blank" rel="noopener">https://username.github.io/</a>      即可访问</p>
+<h2 id="本次经历"><a href="#本次经历" class="headerlink" title="本次经历"></a>本次经历</h2><p>在deploy部分写地址的时候，https后面多加了空格。</p>
+<p>于是fatal :I don’t handle protocol ‘https’</p>
+<p>注意细节呀。</p>
+
+		  	  
+	</div>
+
+	<div class="article-bottom">
+		<a class="article-readmore" href="/2018/05/24/换电脑的新经历呀/">阅读更多</a> 	</div>	
+    
+</article>     
+     	
+      	  	
+
+  		
+    	<article class="article">		
+	   
+	<div class="article-header">
+	    
 	     <a class="article-title" href="/2018/05/16/别怂/">不要怕</a>  
 	       
 		 
@@ -151,7 +256,7 @@
 	</div>
 
 	<div class="article-bottom">
-		<a class="article-readmore" href="/2018/05/16/别怂/">Continue</a> 	</div>	
+		<a class="article-readmore" href="/2018/05/16/别怂/">阅读更多</a> 	</div>	
     
 </article>     
      	
@@ -197,7 +302,7 @@
 	</div>
 
 	<div class="article-bottom">
-		<a class="article-readmore" href="/2018/04/18/说说几个奇怪的梦吧/">Continue</a> 	</div>	
+		<a class="article-readmore" href="/2018/04/18/说说几个奇怪的梦吧/">阅读更多</a> 	</div>	
     
 </article>     
      	
@@ -255,7 +360,7 @@
 	</div>
 
 	<div class="article-bottom">
-		<a class="article-readmore" href="/2018/04/18/交织/">Continue</a> 	</div>	
+		<a class="article-readmore" href="/2018/04/18/交织/">阅读更多</a> 	</div>	
     
 </article>     
      	
@@ -309,7 +414,7 @@
 	</div>
 
 	<div class="article-bottom">
-		<a class="article-readmore" href="/2018/03/14/生活一定是越来越好的呀/">Continue</a> 	</div>	
+		<a class="article-readmore" href="/2018/03/14/生活一定是越来越好的呀/">阅读更多</a> 	</div>	
     
 </article>     
      	
@@ -415,7 +520,7 @@
 	</div>
 
 	<div class="article-bottom">
-		<a class="article-readmore" href="/2018/02/17/hey/">Continue</a> 	</div>	
+		<a class="article-readmore" href="/2018/02/17/hey/">阅读更多</a> 	</div>	
     
 </article>     
      	
@@ -440,7 +545,7 @@
 
 
             <div class="search-header">
-            <input type="text" placeholder="Typing Something here." id="search-input" class="search-input">  
+            <input type="text" placeholder="输入你想搜索的" id="search-input" class="search-input">  
             <span class="search-cancel iconfont icon-cancel"></span>
           
             </div>
@@ -459,31 +564,31 @@
          
             
 
-            <a class="mobile-menu-link" href="/">Home
+            <a class="mobile-menu-link" href="/">首页
             </a>
             
          
             
 
-            <a class="mobile-menu-link" href="/archives">Archives
+            <a class="mobile-menu-link" href="/archives">归档
             </a>
             
          
             
 
-            <a class="mobile-menu-link" href="/tags">Tags
+            <a class="mobile-menu-link" href="/tags">标签
             </a>
             
          
             
 
-            <a class="mobile-menu-link" href="/about">About
+            <a class="mobile-menu-link" href="/about">关于
             </a>
             
          
                           
 
-            <a class="mobile-menu-link mobile-menu-search" href="#">Search </a>                 
+            <a class="mobile-menu-link mobile-menu-search" href="#">搜索 </a>                 
             
          
       
